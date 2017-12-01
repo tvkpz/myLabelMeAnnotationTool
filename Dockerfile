@@ -50,7 +50,7 @@ ENV APACHE_ALLOW_ENCODED_SLASHES        Off
 # deploy repo
 RUN cd /var/www/ \
     && rm -rf html \
-    && git clone https://github.com/CSAILVision/LabelMeAnnotationTool.git html \
+    && git clone https://github.com/tvkpz/myLabelMeAnnotationTool.git html \
     && cd html \
     && make \
     && chown -R ${APACHE_RUN_USER}:${APACHE_RUN_GROUP} /var/www
